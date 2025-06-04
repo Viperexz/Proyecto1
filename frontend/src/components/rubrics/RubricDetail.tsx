@@ -93,7 +93,7 @@ export default function RubricDetail() {
 
             <div className="flex gap-4 mt-4">
                 <button
-                    onClick={() => navigate('/evaluationTable')}
+                    onClick={() => navigate('/evaluaciones')}
                     className="px-4 py-2 bg-blue-600 text-white rounded"
                 >
                     Ir a Evaluación
