@@ -1,0 +1,6 @@
+http://localhost:8080/RubricEvaluation/${idStudent}/${semester} endpoints de vista estudiante de evaluación de rubrica (Trae las materias de un estudiante en un periodo especifico) [get]
+http://localhost:8080/RubricEvaluation/bySubject/${idStudent}/${semester}/${idSubject} endpoints de vista estudiante de evaluación de rubrica (Trae el nombre del profesor de una materia y un periodo especifico) [get]
+http://localhost:8080/RubricEvaluation/${idStudent} endpoints de vista estudiante de evaluación de rubrica (Trae los periodos asociados al estudiante) [get]
+http://localhost:8080/RubricEvaluation/${idStudent}/${idSubject}/${semester} endpoints de vista estudiante de evaluación de rubrica (Trae rubricas de un estudiante asociadas a una materia y periodo especifico [get]
+http://localhost:8080/RubricEvaluation/${idStudent}/${idSubject}/${semester}/${idRubric} endpoints de vista estudiante de evaluación de rubrica (Trae toda la rubrica evaluada) [get]
+http://localhost:8080/RubricEvaluation/byName/${name} endpoints de vista estudiante de evaluación de rubrica (Trae el id del estudiante según el nombre) [get]

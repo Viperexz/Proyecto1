@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "b8e1623e-4be6-4eb0-aba9-bbd5473a9f8c",
+		"name": "Proyecto1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39958757"
+	},
+	"item": [
+		{
+			"name": "getSubjectsFromStudentPeriod",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJuOWlwWXQxU0RNNzhMeU5lZ3BvekpTSVdQNDZyQURUdG1CLUNpYngyS1FJIn0.eyJleHAiOjE3NDkyOTIyNjYsImlhdCI6MTc0OTI1NjI3MiwianRpIjoib25ydHJvOjU1ZDIwNWQ4LWJjZjQtNDM2Yi05ZTcwLTMzMTgxMjYyYWM0MiIsImlzcyI6Imh0dHA6Ly9rZXljbG9hay5sb2NhbDo4MTgxL3JlYWxtcy9iYWNrZW5kX3Byb3llY3RvMV9zZ2EiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiODkwMGExNDItZjFhMC00OTg3LThjOWEtNDgwZTRkZGFjMjU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYmFja2VuZF9zZ2FfY2xpZW50Iiwic2lkIjoiZjQyYzk3NzAtZGQ5Zi00OTRkLWEwZGQtZTEyMTMwMDJmZjMwIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjgwODAiLCJodHRwczovL29hdXRoLnBzdG1uLmlvIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJDT09SRElOQVRPUl9ST0xFIiwib2ZmbGluZV9hY2Nlc3MiLCJTVFVERU5UX1JPTEUiLCJkZWZhdWx0LXJvbGVzLWJhY2tlbmRfcHJveWVjdG8xX3NnYSIsIkFETUlOX1JPTEUiLCJ1bWFfYXV0aG9yaXphdGlvbiIsIlRFQUNIRVJfUk9MRSJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiT3NjYXIgRmVybmFuZG8gSG95b3MgQ2FydmFqYWwiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbl91c2VyIiwiZ2l2ZW5fbmFtZSI6Ik9zY2FyIEZlcm5hbmRvIiwiZmFtaWx5X25hbWUiOiJIb3lvcyBDYXJ2YWphbCIsImVtYWlsIjoib3NmZWhveW9zQHVuaWNhdWNhLmVkdS5jbyJ9.TlwYpQTgvQdXa4acQBJKN228sFPuQcqoHBZTl51V2bl-uvWSIwCCRp30TjmFH0v363gwlvhu-OHlh4bnAb4-zmnWgB7BAs8dDKyVzc_ZjCtbksLAzMZUietBEMdaTapKergv571I9rdJZkySxbKGgQS0QAgnD4S_kHCDVpQqSdqRg0J11nM74LayYoqmrxjA3o1lCN9AemVpNNzXErt_LNTqjoXBnu0YDPYORT2oFDcNzyeu1aUwGJYGEvP8EOos9hjzHjDF85VD6_7n7PR_Hrl67SAhn6smNl6pK323n4lk-gGhG0YKowyLBSqbbbJNs6dXq2H76VKADxyhZwVLcA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/RubricEvaluation/1/2025-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RubricEvaluation",
+						"1",
+						"2025-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPeriods",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJuOWlwWXQxU0RNNzhMeU5lZ3BvekpTSVdQNDZyQURUdG1CLUNpYngyS1FJIn0.eyJleHAiOjE3NDkyOTIyNjYsImlhdCI6MTc0OTI1NjI3MiwianRpIjoib25ydHJvOjU1ZDIwNWQ4LWJjZjQtNDM2Yi05ZTcwLTMzMTgxMjYyYWM0MiIsImlzcyI6Imh0dHA6Ly9rZXljbG9hay5sb2NhbDo4MTgxL3JlYWxtcy9iYWNrZW5kX3Byb3llY3RvMV9zZ2EiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiODkwMGExNDItZjFhMC00OTg3LThjOWEtNDgwZTRkZGFjMjU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYmFja2VuZF9zZ2FfY2xpZW50Iiwic2lkIjoiZjQyYzk3NzAtZGQ5Zi00OTRkLWEwZGQtZTEyMTMwMDJmZjMwIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjgwODAiLCJodHRwczovL29hdXRoLnBzdG1uLmlvIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJDT09SRElOQVRPUl9ST0xFIiwib2ZmbGluZV9hY2Nlc3MiLCJTVFVERU5UX1JPTEUiLCJkZWZhdWx0LXJvbGVzLWJhY2tlbmRfcHJveWVjdG8xX3NnYSIsIkFETUlOX1JPTEUiLCJ1bWFfYXV0aG9yaXphdGlvbiIsIlRFQUNIRVJfUk9MRSJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiT3NjYXIgRmVybmFuZG8gSG95b3MgQ2FydmFqYWwiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbl91c2VyIiwiZ2l2ZW5fbmFtZSI6Ik9zY2FyIEZlcm5hbmRvIiwiZmFtaWx5X25hbWUiOiJIb3lvcyBDYXJ2YWphbCIsImVtYWlsIjoib3NmZWhveW9zQHVuaWNhdWNhLmVkdS5jbyJ9.TlwYpQTgvQdXa4acQBJKN228sFPuQcqoHBZTl51V2bl-uvWSIwCCRp30TjmFH0v363gwlvhu-OHlh4bnAb4-zmnWgB7BAs8dDKyVzc_ZjCtbksLAzMZUietBEMdaTapKergv571I9rdJZkySxbKGgQS0QAgnD4S_kHCDVpQqSdqRg0J11nM74LayYoqmrxjA3o1lCN9AemVpNNzXErt_LNTqjoXBnu0YDPYORT2oFDcNzyeu1aUwGJYGEvP8EOos9hjzHjDF85VD6_7n7PR_Hrl67SAhn6smNl6pK323n4lk-gGhG0YKowyLBSqbbbJNs6dXq2H76VKADxyhZwVLcA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/RubricEvaluation/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"RubricEvaluation",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRubricsFromStudentCoursePeriod",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJuOWlwWXQxU0RNNzhMeU5lZ3BvekpTSVdQNDZyQURUdG1CLUNpYngyS1FJIn0.eyJleHAiOjE3NDkyOTIyNjYsImlhdCI6MTc0OTI1NjI3MiwianRpIjoib25ydHJvOjU1ZDIwNWQ4LWJjZjQtNDM2Yi05ZTcwLTMzMTgxMjYyYWM0MiIsImlzcyI6Imh0dHA6Ly9rZXljbG9hay5sb2NhbDo4MTgxL3JlYWxtcy9iYWNrZW5kX3Byb3llY3RvMV9zZ2EiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiODkwMGExNDItZjFhMC00OTg3LThjOWEtNDgwZTRkZGFjMjU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYmFja2VuZF9zZ2FfY2xpZW50Iiwic2lkIjoiZjQyYzk3NzAtZGQ5Zi00OTRkLWEwZGQtZTEyMTMwMDJmZjMwIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjgwODAiLCJodHRwczovL29hdXRoLnBzdG1uLmlvIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJDT09SRElOQVRPUl9ST0xFIiwib2ZmbGluZV9hY2Nlc3MiLCJTVFVERU5UX1JPTEUiLCJkZWZhdWx0LXJvbGVzLWJhY2tlbmRfcHJveWVjdG8xX3NnYSIsIkFETUlOX1JPTEUiLCJ1bWFfYXV0aG9yaXphdGlvbiIsIlRFQUNIRVJfUk9MRSJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiT3NjYXIgRmVybmFuZG8gSG95b3MgQ2FydmFqYWwiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbl91c2VyIiwiZ2l2ZW5fbmFtZSI6Ik9zY2FyIEZlcm5hbmRvIiwiZmFtaWx5X25hbWUiOiJIb3lvcyBDYXJ2YWphbCIsImVtYWlsIjoib3NmZWhveW9zQHVuaWNhdWNhLmVkdS5jbyJ9.TlwYpQTgvQdXa4acQBJKN228sFPuQcqoHBZTl51V2bl-uvWSIwCCRp30TjmFH0v363gwlvhu-OHlh4bnAb4-zmnWgB7BAs8dDKyVzc_ZjCtbksLAzMZUietBEMdaTapKergv571I9rdJZkySxbKGgQS0QAgnD4S_kHCDVpQqSdqRg0J11nM74LayYoqmrxjA3o1lCN9AemVpNNzXErt_LNTqjoXBnu0YDPYORT2oFDcNzyeu1aUwGJYGEvP8EOos9hjzHjDF85VD6_7n7PR_Hrl67SAhn6smNl6pK323n4lk-gGhG0YKowyLBSqbbbJNs6dXq2H76VKADxyhZwVLcA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/RubricEvaluation/2/14/2025-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"RubricEvaluation",
+						"2",
+						"14",
+						"2025-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRubricEvaluation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/RubricEvaluation/2/14/2025-1/400",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"RubricEvaluation",
+						"2",
+						"14",
+						"2025-1",
+						"400"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin_user\",\r\n    \"password\": \"admin28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getgetSubjectFromStudentPeriod",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJuOWlwWXQxU0RNNzhMeU5lZ3BvekpTSVdQNDZyQURUdG1CLUNpYngyS1FJIn0.eyJleHAiOjE3NDkyOTIyNjYsImlhdCI6MTc0OTI1NjI3MiwianRpIjoib25ydHJvOjU1ZDIwNWQ4LWJjZjQtNDM2Yi05ZTcwLTMzMTgxMjYyYWM0MiIsImlzcyI6Imh0dHA6Ly9rZXljbG9hay5sb2NhbDo4MTgxL3JlYWxtcy9iYWNrZW5kX3Byb3llY3RvMV9zZ2EiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiODkwMGExNDItZjFhMC00OTg3LThjOWEtNDgwZTRkZGFjMjU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYmFja2VuZF9zZ2FfY2xpZW50Iiwic2lkIjoiZjQyYzk3NzAtZGQ5Zi00OTRkLWEwZGQtZTEyMTMwMDJmZjMwIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjgwODAiLCJodHRwczovL29hdXRoLnBzdG1uLmlvIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJDT09SRElOQVRPUl9ST0xFIiwib2ZmbGluZV9hY2Nlc3MiLCJTVFVERU5UX1JPTEUiLCJkZWZhdWx0LXJvbGVzLWJhY2tlbmRfcHJveWVjdG8xX3NnYSIsIkFETUlOX1JPTEUiLCJ1bWFfYXV0aG9yaXphdGlvbiIsIlRFQUNIRVJfUk9MRSJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiT3NjYXIgRmVybmFuZG8gSG95b3MgQ2FydmFqYWwiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbl91c2VyIiwiZ2l2ZW5fbmFtZSI6Ik9zY2FyIEZlcm5hbmRvIiwiZmFtaWx5X25hbWUiOiJIb3lvcyBDYXJ2YWphbCIsImVtYWlsIjoib3NmZWhveW9zQHVuaWNhdWNhLmVkdS5jbyJ9.TlwYpQTgvQdXa4acQBJKN228sFPuQcqoHBZTl51V2bl-uvWSIwCCRp30TjmFH0v363gwlvhu-OHlh4bnAb4-zmnWgB7BAs8dDKyVzc_ZjCtbksLAzMZUietBEMdaTapKergv571I9rdJZkySxbKGgQS0QAgnD4S_kHCDVpQqSdqRg0J11nM74LayYoqmrxjA3o1lCN9AemVpNNzXErt_LNTqjoXBnu0YDPYORT2oFDcNzyeu1aUwGJYGEvP8EOos9hjzHjDF85VD6_7n7PR_Hrl67SAhn6smNl6pK323n4lk-gGhG0YKowyLBSqbbbJNs6dXq2H76VKADxyhZwVLcA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/RubricEvaluation/bySubject/2/2025-1/14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"RubricEvaluation",
+						"bySubject",
+						"2",
+						"2025-1",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudentByUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJuOWlwWXQxU0RNNzhMeU5lZ3BvekpTSVdQNDZyQURUdG1CLUNpYngyS1FJIn0.eyJleHAiOjE3NDkyOTIyNjYsImlhdCI6MTc0OTI1NjI3MiwianRpIjoib25ydHJvOjU1ZDIwNWQ4LWJjZjQtNDM2Yi05ZTcwLTMzMTgxMjYyYWM0MiIsImlzcyI6Imh0dHA6Ly9rZXljbG9hay5sb2NhbDo4MTgxL3JlYWxtcy9iYWNrZW5kX3Byb3llY3RvMV9zZ2EiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiODkwMGExNDItZjFhMC00OTg3LThjOWEtNDgwZTRkZGFjMjU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYmFja2VuZF9zZ2FfY2xpZW50Iiwic2lkIjoiZjQyYzk3NzAtZGQ5Zi00OTRkLWEwZGQtZTEyMTMwMDJmZjMwIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjgwODAiLCJodHRwczovL29hdXRoLnBzdG1uLmlvIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJDT09SRElOQVRPUl9ST0xFIiwib2ZmbGluZV9hY2Nlc3MiLCJTVFVERU5UX1JPTEUiLCJkZWZhdWx0LXJvbGVzLWJhY2tlbmRfcHJveWVjdG8xX3NnYSIsIkFETUlOX1JPTEUiLCJ1bWFfYXV0aG9yaXphdGlvbiIsIlRFQUNIRVJfUk9MRSJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiT3NjYXIgRmVybmFuZG8gSG95b3MgQ2FydmFqYWwiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJhZG1pbl91c2VyIiwiZ2l2ZW5fbmFtZSI6Ik9zY2FyIEZlcm5hbmRvIiwiZmFtaWx5X25hbWUiOiJIb3lvcyBDYXJ2YWphbCIsImVtYWlsIjoib3NmZWhveW9zQHVuaWNhdWNhLmVkdS5jbyJ9.TlwYpQTgvQdXa4acQBJKN228sFPuQcqoHBZTl51V2bl-uvWSIwCCRp30TjmFH0v363gwlvhu-OHlh4bnAb4-zmnWgB7BAs8dDKyVzc_ZjCtbksLAzMZUietBEMdaTapKergv571I9rdJZkySxbKGgQS0QAgnD4S_kHCDVpQqSdqRg0J11nM74LayYoqmrxjA3o1lCN9AemVpNNzXErt_LNTqjoXBnu0YDPYORT2oFDcNzyeu1aUwGJYGEvP8EOos9hjzHjDF85VD6_7n7PR_Hrl67SAhn6smNl6pK323n4lk-gGhG0YKowyLBSqbbbJNs6dXq2H76VKADxyhZwVLcA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/RubricEvaluation//byName/Carlos Rodriguez",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"RubricEvaluation",
+						"",
+						"byName",
+						"Carlos Rodriguez"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

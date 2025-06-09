@@ -1,0 +1,140 @@
+//Petición
+http://localhost:8080/api/RubricEvaluation/2/2025-1
+
+//Respuesta
+[
+    {
+        "nameSubject": "Pruebas de Software",
+        "nameTeacher": "Johanna Andrea",
+        "id": 14
+    }
+]
+
+
+
+//Petición
+http://localhost:8080/api/RubricEvaluation/bySubject/2/2025-1/14
+
+//Respuesta
+{
+    "nameSubject": "Pruebas de Software",
+    "nameTeacher": "Johanna Andrea",
+    "period": "2025-1"
+}
+
+
+//Petición
+
+http://localhost:8080/api/RubricEvaluation/2
+
+//Respuesta
+[
+    "2025-1"
+]
+
+//Petición
+http://localhost:8080/api/RubricEvaluation/2/14/2025-1
+//Respuesta
+[
+    {
+        "idRubric": 400,
+        "nameRubric": "Rúbrica Redes Avanzada"
+    },
+    {
+        "idRubric": 900,
+        "nameRubric": "Rúbrica Pruebas de Software"
+    }
+]
+
+//Petición
+http://localhost:8080/api/RubricEvaluation/2/14/2025-1/400
+//Respuesta
+{
+    "description": "Es importante que los estudiantes aprendan a configurar las topologías dadas para poder desempeñarse en el mundo laboral",
+    "criterias": [
+        {
+            "descriptionCriteria": "Calidad del código",
+            "levels": [
+                {
+                    "description": "Desempeño básico",
+                    "range": "2.5-3.0"
+                },
+                {
+                    "description": "Desempeño intermedio",
+                    "range": "3.1-4.0"
+                },
+                {
+                    "description": "Desempeño avanzado",
+                    "range": "4.1-5.0"
+                }
+            ],
+            "percentage": 30.0
+        },
+        {
+            "descriptionCriteria": "Documentación técnica",
+            "levels": [
+                {
+                    "description": "Desempeño básico",
+                    "range": "2.5-3.0"
+                },
+                {
+                    "description": "Desempeño intermedio",
+                    "range": "3.1-4.0"
+                },
+                {
+                    "description": "Desempeño avanzado",
+                    "range": "4.1-5.0"
+                }
+            ],
+            "percentage": 20.0
+        },
+        {
+            "descriptionCriteria": "Cumplimiento de requisitos",
+            "levels": [
+                {
+                    "description": "Desempeño básico",
+                    "range": "2.5-3.0"
+                },
+                {
+                    "description": "Desempeño intermedio",
+                    "range": "3.1-4.0"
+                },
+                {
+                    "description": "Desempeño avanzado",
+                    "range": "4.1-5.0"
+                }
+            ],
+            "percentage": 50.0
+        }
+    ],
+    "califications": [
+        {
+            "calification": 4.2,
+            "message": "Buen trabajo en la práctica",
+            "level": "Nivel 2"
+        },
+        {
+            "calification": 3.8,
+            "message": "Debe mejorar documentación",
+            "level": "Nivel 1"
+        },
+        {
+            "calification": 4.8,
+            "message": "Excelente implementación",
+            "level": "Nivel 3"
+        },
+        {
+            "calification": 4.7,
+            "message": "Buen desarrollo de topologia",
+            "level": "Nivel 3"
+        }
+    ],
+    "totalScore": 3.50
+}
+
+//Petición
+
+http://localhost:8080/api/RubricEvaluation/byName/Carlos%20Rodriguez
+
+//Respuesta
+2
