@@ -189,11 +189,11 @@ const ExportarExcelButton: React.FC<ExportarExcelButtonProps> = ({
     });
     // Filas de datos (verde muy suave)
     histogramas.forEach(h => {
-      if (h.levels && typeof h.levels === 'object') {
-        Object.entries(h.levels).forEach(([nivel, cantidad]) => {
+      if (h.levelCounts && typeof h.levelCounts === 'object') {
+        Object.entries(h.levelCounts).forEach(([nivel, cantidad]) => {
           const row = wsHist.addRow([
-            h.crfDescripcion || h.criteriaDescription,
-            h.crfDescripcion || h.criteriaDescription,
+            h.criteriaDescription,
+            h.criteriaDescription,
             nivel,
             cantidad
           ]);

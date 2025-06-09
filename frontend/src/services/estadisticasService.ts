@@ -23,9 +23,9 @@ export interface CriteriaDTO {
 }
 
 export interface CriteriaStatsResponseDTO {
-  levels: Record<string, number>;
-  crfDescripcion: string;
-  idCriterio: number;
+  criteriaId: number;
+  criteriaDescription: string;
+  levelCounts: Record<string, number>;
 }
 
 export interface CriteriaAverageDTO {
@@ -47,10 +47,11 @@ export async function getStatsByRubric(
 }
 
 export async function getHistogramByCriteria(
-  criteria: CriteriaDTO
+  criteria: FilterStatsDTO
 ): Promise<CriteriaStatsResponseDTO[]> {
   try {
-    const { data } = await api.post("/evaluations/Stats", criteria);
+    const { data } = await api.post("/stats/by-criteria", criteria);
+    console.log("Se consume este servicio");
     return data;
   } catch (error) {
     console.error("Error al obtener histograma por criterio:", error);

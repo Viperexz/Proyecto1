@@ -1,0 +1,32 @@
+name: Frontend CI/CD
+
+on:
+  push:
+    branches: [ main, auth-WTF ]
+    paths: 
+      - 'frontend/**'
+      - '!frontend/**/*.md'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Deploy to server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SERVER_IP }}
+        username: ${{ secrets.SERVER_USER }}
+        key: ${{ secrets.SERVER_SSH_KEY }}
+        script: |
+            cd /home/Proyecto1/frontend
+            git pull origin main
+            
+            # Instala solo si hubo cambios en dependencias
+            if git diff --name-only HEAD^ HEAD | grep 'package-lock.json'; then
+              npm ci --omit=dev
+            fi            
+            
+            pm2 restart frontend-dev || pm2 start npm --name frontend-dev -- run dev -- --host 0.0.0.0 --port 3000

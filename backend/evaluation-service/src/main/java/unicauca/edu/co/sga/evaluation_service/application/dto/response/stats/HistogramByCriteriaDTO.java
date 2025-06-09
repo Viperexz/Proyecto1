@@ -13,15 +13,11 @@ import java.util.Map;
 public class HistogramByCriteriaDTO {
     private Long criteriaId;
     private String criteriaDescription;
-    private Long countNivel1; // 0-2.9
-    private Long countNivel2; // 3.0-4.5
-    private Long countNivel3; // 4.6-5.0
+    private Map<String, Long> levelCounts;
 
-    public HistogramByCriteriaDTO(Long criteriaId, String criteriaDescription, Long countNivel1, Long countNivel2, Long countNivel3) {
+    public HistogramByCriteriaDTO(Long criteriaId, String criteriaDescription, Map<String, Long> levelCounts) {
         this.criteriaId = criteriaId;
         this.criteriaDescription = criteriaDescription;
-        this.countNivel1 = countNivel1;
-        this.countNivel2 = countNivel2;
-        this.countNivel3 = countNivel3;
+        this.levelCounts = levelCounts;
     }
 }

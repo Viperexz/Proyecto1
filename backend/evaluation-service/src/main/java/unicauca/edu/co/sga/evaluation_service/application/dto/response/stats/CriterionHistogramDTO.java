@@ -17,7 +17,7 @@ public class CriterionHistogramDTO {
     private String descripcion;
     @Setter
     @Getter
-    private List<NivelDesempenoDTO> niveles;
+    private List<HistogramByCriteriaProjection> niveles;
 
     public CriterionHistogramDTO(Long idCriterio, String descripcion) {
         this.idCriterio = idCriterio;

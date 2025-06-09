@@ -85,17 +85,10 @@ const Estadisticas: React.FC = () => {
       setEstadisticas(statsData);
 
       // Cargar histogramas por criterio
-      const materiaObj = materias.find(m => m.name === selectedMateria);
-      const subjectId = materiaObj ? Number(materiaObj.idMateria) : null;
-      if (!subjectId) {
-        setError("No se pudo determinar el ID de la materia seleccionada.");
-        setLoading(false);
-        return;
-      }
       const histogramCriteriaDTO = {
-        rubricId: selectedRubrica.idRubrica,
-        subjectId: subjectId,
-        semester: selectedPeriodo
+        subjectName: selectedMateria,
+        rubricName: selectedRubrica.nombreRubrica,
+        period: selectedPeriodo
       };
       const histogramData = await getHistogramByCriteria(histogramCriteriaDTO);
       setHistogramas(histogramData);
@@ -213,9 +206,9 @@ const Estadisticas: React.FC = () => {
           />
           <HistogramaCriterioChart 
             histogramas={histogramas.map(h => ({
-              criterio: h.crfDescripcion,
-              descripcion: h.crfDescripcion,
-              niveles: Object.entries(h.levels).map(([nivel, cantidad]) => ({
+              criterio: h.criteriaDescription,
+              descripcion: h.criteriaDescription,
+              niveles: Object.entries(h.levelCounts).map(([nivel, cantidad]) => ({
                 nivel,
                 cantidad
               }))
